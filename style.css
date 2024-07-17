@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #fff7ad 2%, #ffb5ee 98%);
+}
+header {
+  background-color: #ff7171;
+  height: 10vh;
+  padding-inline: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header li {
+  list-style-type: none;
+  font-family: "Times New Roman";
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+button {
+  background-color: #f66d6d;
+  color: white;
+  font-size: 2.3vh;
+  font-weight: lighter;
+  border: none;
+  padding-inline: 70px;
+  padding-block: 15px;
+}
+main {
+  width: 100%;
+  display: flex;
+  min-height: 90vh;
+}
+.left {
+  width: 50%;
+  padding: 5%;
+}
+.left h1 {
+  margin-top: 30px;
+  font-family: montserrat;
+  font-size: 4vw;
+  color: #191919;
+}
+.main-description {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 2.5vh;
+  color: #191919;
+  font-weight: lighter;
+  line-height: 4.5vh;
+}
+.right {
+  width: 50%;
+  /* height: 100%; */
+}
+.mainImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* about section css code */
+.about-section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  /* justify-content: space-evenly; */
+}
+.about-left {
+  height: 60%;
+  width: 40%;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+}
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.item3 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+.about-right {
+  padding: 20px;
+  width: 35%;
+  background-color: #ff7171;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: montserrat;
+  font-size: 4vw;
+}
+.click-area {
+  display: flex;
+  align-items: center;
+}
+.arrow-img {
+  margin-left: 10px;
+  width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  li {
+    display: none;
+  }
+  header {
+    justify-content: end;
+  }
+  main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+  .right {
+    width: 100%;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+  .about-left {
+    width: 100%;
+    padding-inline: 20px;
+  }
+  .about-right {
+    width: 100%;
+  }
+  .left h1 {
+    font-size: 5vh;
+    margin-top: 10px;
+  }
+  .main-description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 70%;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+}
