@@ -142,6 +142,7 @@ h2 {
   }
   .about-section {
     flex-direction: column;
+    margin-top:30px;
   }
   .about-left {
     width: 100%;
