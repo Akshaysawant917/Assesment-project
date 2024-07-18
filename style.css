@@ -22,6 +22,7 @@ header li {
   font-family: "Times New Roman";
   font-size: 1.5vw;
   font-weight: bold;
+  cursor: pointer
 }
 button {
   background-color: #f66d6d;
